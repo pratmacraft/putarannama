@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin Wheel Nama</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Spin Wheel Nama</h1>
+        <div class="input-section">
+            <input type="text" id="nameInput" placeholder="Masukkan nama dan tekan enter">
+            <button onclick="addName()">Tambah Nama</button>
+        </div>
+        <div id="namesList" class="names-list"></div>
+        <button class="spin-button" onclick="spin()">Putar</button>
+        <div class="wheel-container">
+            <div class="wheel">
+                <div id="wheel"></div>
+            </div>
+        </div>
+        <div id="result"></div>
+        <button id="deleteButton" class="delete-button" onclick="deleteSelectedName()" style="display:none;">Hapus Nama</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
